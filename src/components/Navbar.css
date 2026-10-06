@@ -49,6 +49,29 @@ nav{
   justify-content: center;
   flex-shrink: 0;
 }
+.what{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #3affe8, #0f33ff, #128c7e);
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 999999;
+}
+.what a{
+  text-decoration: none;
+  color: #fff647;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .navbar-button {
   text-decoration: none;
   width: 100%;

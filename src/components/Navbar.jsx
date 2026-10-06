@@ -2,6 +2,7 @@ import "./Navbar.css";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 import { RxCrossCircled } from "react-icons/rx";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,6 +15,14 @@ function Navbar() {
         {/* <img src="/logo.webp" alt="Yogesh Yadav Logo" /> */}
         My Portfolio
       </div>
+      <div className="what"><a
+          href="https://wa.me/919571973691?text=Hello%20Yogesh,%20I%20am%20interested%20in%20hiring%20you."
+          target="_blank"
+          rel="noreferrer"
+          // className="navbar-button"
+        >
+          <IoLogoWhatsapp />
+        </a></div>
       <ul className="navbar-links">
         <li>
           <a href="#home">Home</a>
@@ -68,16 +77,6 @@ function Navbar() {
           <li>
             <a href="#contact">Contact</a>
           </li>
-          <li><div className="navbar-button-wrapper">
-        <a
-          href="https://wa.me/919571973691?text=Hello%20Yogesh,%20I%20am%20interested%20in%20hiring%20you."
-          target="_blank"
-          rel="noreferrer"
-          className="navbar-button"
-        >
-          Hire Me
-        </a>
-      </div></li>
         </ul>
         
       )}
