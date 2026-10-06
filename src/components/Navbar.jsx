@@ -68,14 +68,14 @@ function Navbar() {
           <li>
             <a href="#contact">Contact</a>
           </li>
-          <a
+          <li><a
           href="https://wa.me/919571973691?text=Hello%20Yogesh,%20I%20am%20interested%20in%20hiring%20you."
           target="_blank"
           rel="noreferrer"
           className="navbar-button"
         >
           Hire Me
-        </a>
+        </a></li>
         </ul>
         
       )}
