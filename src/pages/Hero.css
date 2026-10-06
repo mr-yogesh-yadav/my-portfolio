@@ -3,7 +3,20 @@
   display: flex;
   align-items: center;
   padding: 88px 120px;
-  background: linear-gradient(135deg,#FFFFFF,#f7f293);
+  position: relative;
+  background: linear-gradient(135deg,#cdffaa,#04c72b);
+  /* background-color: #ffa0a0; */
+  /* background-image: url(../assets/bg2.webp); */
+}
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 0.7;
+  z-index: 0;
+  pointer-events: none;
 }
 .backgrand{
   position: absolute;

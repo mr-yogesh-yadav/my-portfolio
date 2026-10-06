@@ -7,9 +7,11 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import { IoIosCall } from "react-icons/io";
 import { FaLaptopCode } from "react-icons/fa";
+import Particles from "../components/Particles";
 function Hero() {
   return (
     <section className="hero"id="home">
+      <Particles />
       <div className="backgrand">Portfolio</div>
       <div className="hero-content">
         <p className="hero-greeting">👋 Hello, I'm</p>
