@@ -28,6 +28,7 @@ function Navbar() {
           <a href="#education">Education</a>
         </li>
         <li>
+
           <a href="#contact">Contact</a>
         </li>
       </ul>
@@ -67,7 +68,16 @@ function Navbar() {
           <li>
             <a href="#contact">Contact</a>
           </li>
+          <a
+          href="https://wa.me/919571973691?text=Hello%20Yogesh,%20I%20am%20interested%20in%20hiring%20you."
+          target="_blank"
+          rel="noreferrer"
+          className="navbar-button"
+        >
+          Hire Me
+        </a>
         </ul>
+        
       )}
     </nav>
   );
