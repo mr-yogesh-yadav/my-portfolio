@@ -1,0 +1,279 @@
+.education-section {
+  padding: 88px 120px;
+  background: #ffffff;
+  color: #111827;
+}
+.education-heading {
+  max-width: 780px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+.education-subtitle {
+  color: #b8860b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 14px;
+}
+.education-heading h1 {
+  margin: 0 0 22px;
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  line-height: 1.2;
+}
+.education-heading h1 span {
+  background: linear-gradient(90deg,
+      #7a5c00,
+      #b8860b,
+      #d4af37,
+      #f5d76e,
+      #b8860b,
+      #7a5c00);
+
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: educationGold 5s linear infinite;
+}
+@keyframes educationGold {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+.education-intro {
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  gap: 15px;
+}
+.education-card {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.06);
+  transition: 0.35s ease;
+}
+.education-card:hover {
+  transform: translateY(-6px);
+  border-color: #d4af37;
+  box-shadow: 0 20px 45px rgba(184, 134, 11, 0.12);
+}
+.training-link{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.training-link a{
+  text-decoration: none;
+  text-align: start;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.training-link a:hover{
+  color: #d4af37;
+  gap: 10px;
+}
+.education-image,
+.training-image {
+  height: 400px;
+  overflow: hidden;
+}
+.education-image img,
+.training-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.5s ease;
+}
+.education-card:hover img {
+  transform: scale(1.04);
+}
+.education-content {
+  padding: 20px;
+}
+.education-label {
+  display: inline-block;
+  /* margin-bottom: 11px; */
+  color: #9a7300;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.education-content h2 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+}
+.education-place {
+  /* margin-bottom: 7px; */
+  color: #b8860b;
+  font-size: 14px;
+  font-weight: 600;
+}
+.education-description {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.8;
+  /* margin-bottom: 15px; */
+  text-align: start;
+}
+.marks-section h3 {
+  margin: 0 0 5px;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+.mark-box {
+  padding: 8px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+.mark-box span {
+  display: block;
+  color: #64748b;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.mark-box strong {
+  color: #111827;
+  font-size: 18px;
+}
+.education-ba {
+  grid-template-columns: 1.2fr 0.8fr;
+}
+.education-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 15px;
+  border-radius: 30px;
+  background: #f7f7f7;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+}
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d4af37;
+}
+.education-training {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+.training-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.training-skills span {
+  padding: 8px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #fafafa;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 600;
+}
+.certificate-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 35px 40px;
+  margin-top: 50px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #fafafa;
+}
+.certificate-area h2 {
+  margin: 0 0 8px;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+}
+.certificate-area p {
+  color: #64748b;
+  font-size: 14px;
+}
+.certificate-placeholder {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #d4af37;
+  border-radius: 10px;
+  background: #fffdf7;
+  flex-shrink: 0;
+}
+.certificate-placeholder span {
+  color: #b8860b;
+  font-size: 30px;
+}
+.certificate-placeholder p {
+  margin: 0;
+  color: #9a7300;
+}
+@media(max-width:1200px){
+     .education-section{
+        padding: 80px 80px;
+    }
+    .cards{
+      grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:992px){
+  .education-section{
+    padding: 50px 30px;
+  }
+}
+@media (max-width: 800px) {
+  .education-heading h1 {
+    font-size: 42px;
+  }
+  .education-card,
+  .education-ba,
+  .education-training {
+    grid-template-columns: 1fr;
+  }
+  .education-image,
+  .training-image {
+    min-height: 280px;
+  }
+  .education-content {
+    padding: 30px;
+  }
+  .education-content h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 490px) {
+  .education-heading h1 {
+    font-size: 36px;
+  }
+}
