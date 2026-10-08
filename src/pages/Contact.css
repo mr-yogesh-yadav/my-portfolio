@@ -120,6 +120,7 @@
   font-weight: 600;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 .contact-form-box {
   padding-left: 40px;

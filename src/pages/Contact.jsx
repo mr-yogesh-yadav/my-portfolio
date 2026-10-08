@@ -11,7 +11,7 @@ function Contact() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowOverlay(true);
-    }, 3000);
+    }, 15000);
 
     return () => clearTimeout(timer);
   }, []);
