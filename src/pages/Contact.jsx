@@ -7,13 +7,13 @@ import emailjs from "@emailjs/browser";
 function Contact() {
   const [showOverlay, setShowOverlay] = useState(false);
 
-useEffect(() => {
-  const timer = setTimeout(() => {
-    setShowOverlay(true);
-  }, 3000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowOverlay(true);
+    }, 3000);
 
-  return () => clearTimeout(timer);
-}, []);
+    return () => clearTimeout(timer);
+  }, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -322,109 +322,112 @@ useEffect(() => {
           )}
         </div>
         <div
-  className={`form-overlly ${showOverlay ? "active" : ""}`}
-  onClick={() => setShowOverlay(false)}
->
-        <div className="contact-form-box"onClick={(e) => e.stopPropagation()}>
-          {messageSent ? (
-            <div className="message-success">
-              <div className="success-circle">
-                <span>✓</span>
-              </div>
+          className={`form-overlly ${showOverlay ? "active" : ""}`}
+          onClick={() => setShowOverlay(false)}
+        >
+          <div
+            className="contact-form-box"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {messageSent ? (
+              <div className="message-success">
+                <div className="success-circle">
+                  <span>✓</span>
+                </div>
 
-              <h2>Message Sent</h2>
-              <p>Thank you! Your message has been sent successfully.</p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit}>
-              <div className="form-row">
+                <h2>Message Sent</h2>
+                <p>Thank you! Your message has been sent successfully.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit}>
+                <div className="form-row">
+                  <div className="form-group">
+                    <label>Your Name</label>
+
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      name="name"
+                      maxLength={20}
+                      value={formData.name}
+                      onChange={handleChange}
+                    />
+
+                    {errors.name && (
+                      <span className="form-error">{errors.name}</span>
+                    )}
+                  </div>
+
+                  <div className="form-group">
+                    <label>Email Address</label>
+
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+
+                    {errors.email && (
+                      <span className="form-error">{errors.email}</span>
+                    )}
+                  </div>
+                </div>
+
                 <div className="form-group">
-                  <label>Your Name</label>
+                  <label>Subject</label>
 
                   <input
                     type="text"
-                    placeholder="Enter your name"
-                    name="name"
-                    maxLength={20}
-                    value={formData.name}
+                    placeholder="What would you like to discuss?"
+                    name="subject"
+                    value={formData.subject}
                     onChange={handleChange}
                   />
 
-                  {errors.name && (
-                    <span className="form-error">{errors.name}</span>
+                  {errors.subject && (
+                    <span className="form-error">{errors.subject}</span>
                   )}
                 </div>
 
                 <div className="form-group">
-                  <label>Email Address</label>
+                  <label>Message</label>
 
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    name="email"
-                    value={formData.email}
+                  <textarea
+                    rows="6"
+                    placeholder="Write your message..."
+                    name="message"
+                    minLength={20}
+                    value={formData.message}
                     onChange={handleChange}
                   />
 
-                  {errors.email && (
-                    <span className="form-error">{errors.email}</span>
+                  {errors.message && (
+                    <span className="form-error">{errors.message}</span>
                   )}
                 </div>
-              </div>
 
-              <div className="form-group">
-                <label>Subject</label>
-
-                <input
-                  type="text"
-                  placeholder="What would you like to discuss?"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                />
-
-                {errors.subject && (
-                  <span className="form-error">{errors.subject}</span>
-                )}
-              </div>
-
-              <div className="form-group">
-                <label>Message</label>
-
-                <textarea
-                  rows="6"
-                  placeholder="Write your message..."
-                  name="message"
-                  minLength={20}
-                  value={formData.message}
-                  onChange={handleChange}
-                />
-
-                {errors.message && (
-                  <span className="form-error">{errors.message}</span>
-                )}
-              </div>
-
-              <button
-                type="submit"
-                className="contact-button"
-                disabled={isSending}
-              >
-                {isSending ? (
-                  <>
-                    <span className="loading-spinner"></span>
-                    Sending...
-                  </>
-                ) : (
-                  <>
-                    Send Message
-                    <span>↗</span>
-                  </>
-                )}
-              </button>
-            </form>
-          )}
-        </div>
+                <button
+                  type="submit"
+                  className="contact-button"
+                  disabled={isSending}
+                >
+                  {isSending ? (
+                    <>
+                      <span className="loading-spinner"></span>
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      Send Message
+                      <span>↗</span>
+                    </>
+                  )}
+                </button>
+              </form>
+            )}
+          </div>
         </div>
       </div>
 

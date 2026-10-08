@@ -188,7 +188,9 @@
   background: rgba(255, 255, 255, 0.67);
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
 }
 
 .form-overlly.active {
@@ -218,7 +220,7 @@
 .contact-button span {
   font-size: 17px;
 }
-.form-error{
+.form-error {
   color: red;
   font-size: 14px;
 }
@@ -248,26 +250,26 @@
   border-radius: 50%;
   background: #22c55e;
 }
-@media(max-width:1200px){
-    .contact-section{
-        padding: 80px 80px;
-    }
-    .form-row{
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 1200px) {
+  .contact-section {
+    padding: 80px 80px;
+  }
+  .form-row {
+    display: flex;
+    flex-direction: column;
+  }
 }
-@media(max-width:992px){
-    .contact-section{
-        padding: 50px 30px;
-    }
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 50px 30px;
+  }
 }
 @media (max-width: 850px) {
   .contact-wrapper {
     flex-direction: column;
     gap: 40px;
   }
-  .contact-form-box{
+  .contact-form-box {
     width: 100%;
   }
   .contact-form-box {
