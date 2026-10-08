@@ -3,6 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { IoCloseOutline } from "react-icons/io5";
 
 function Contact() {
   const [showOverlay, setShowOverlay] = useState(false);
@@ -329,6 +330,7 @@ function Contact() {
             className="contact-form-box"
             onClick={(e) => e.stopPropagation()}
           >
+            <button onClick={() => setShowOverlay(false)} className="form-cross"><IoCloseOutline /></button>
             {messageSent ? (
               <div className="message-success">
                 <div className="success-circle">
